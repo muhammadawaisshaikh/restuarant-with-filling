@@ -1,0 +1,62 @@
+﻿<Window x:Class="restuarant.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Restaurant Billing Application" Height="650" Width="1100" Background="#FF426881">
+    <Grid Background="#FF316983">
+        <TabControl HorizontalAlignment="Left" Height="578" Margin="0,31,0,0" VerticalAlignment="Top" Width="1082">
+            <TabItem Header="Entry" FontFamily="Century Gothic" FontSize="18" Margin="0,0,-49,0">
+                <Grid Background="#FF316983" Margin="-13,-9,-13,-13">
+                    <Label x:Name="c1" Content="Costumer" HorizontalAlignment="Left" Margin="67,25,0,0" VerticalAlignment="Top" Width="159" Height="41" FontFamily="Century Gothic" FontSize="20"/>
+                    <TextBox x:Name="c11" HorizontalAlignment="Left" Height="35" Margin="244,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontFamily="Century Gothic" FontSize="20" Background="#FF316983"/>
+                    <Label x:Name="c2" Content="Mobile #" HorizontalAlignment="Left" Margin="67,82,0,0" VerticalAlignment="Top" Width="159" Height="41" FontFamily="Century Gothic" FontSize="20"/>
+                    <TextBox x:Name="c22" HorizontalAlignment="Left" Height="35" Margin="244,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontFamily="Century Gothic" FontSize="20" Background="#FF316983"/>
+                    <Label x:Name="c3" Content="Table No #" HorizontalAlignment="Left" Margin="67,143,0,0" VerticalAlignment="Top" Width="159" Height="41" FontFamily="Century Gothic" FontSize="20"/>
+                    <TextBox x:Name="c33" HorizontalAlignment="Left" Height="35" Margin="244,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontFamily="Century Gothic" FontSize="20" Background="#FF316983"/>
+                    <Label x:Name="c4" Content="Guests #" HorizontalAlignment="Left" Margin="67,203,0,0" VerticalAlignment="Top" Width="159" Height="41" FontFamily="Century Gothic" FontSize="20"/>
+                    <TextBox x:Name="c44" HorizontalAlignment="Left" Height="35" Margin="244,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontFamily="Century Gothic" FontSize="20" Background="#FF316983"/>
+                    <Label x:Name="c5" Content="Date" HorizontalAlignment="Left" Margin="67,261,0,0" VerticalAlignment="Top" Width="159" Height="41" FontFamily="Century Gothic" FontSize="20"/>
+                    <Label x:Name="i1" Content="Item Name" HorizontalAlignment="Left" Margin="537,25,0,0" VerticalAlignment="Top" Width="159" Height="41" FontFamily="Century Gothic" FontSize="20"/>
+                    <TextBox x:Name="i11" HorizontalAlignment="Left" Height="35" Margin="714,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontFamily="Century Gothic" FontSize="20" Background="#FF316983"/>
+                    <Label x:Name="i2" Content="Item Units #" HorizontalAlignment="Left" Margin="537,82,0,0" VerticalAlignment="Top" Width="159" Height="41" FontFamily="Century Gothic" FontSize="20"/>
+                    <TextBox x:Name="i22" HorizontalAlignment="Left" Height="35" Margin="714,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontFamily="Century Gothic" FontSize="20" Background="#FF316983"/>
+                    <Label x:Name="i3" Content="Per-unit Price #" HorizontalAlignment="Left" Margin="523,143,0,0" VerticalAlignment="Top" Width="159" Height="41" FontFamily="Century Gothic" FontSize="20"/>
+                    <TextBox x:Name="i33" HorizontalAlignment="Left" Height="35" Margin="714,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontFamily="Century Gothic" FontSize="20" Background="#FF316983"/>
+                    <Button x:Name="totb" Content="Total" HorizontalAlignment="Left" Margin="913,143,0,0" VerticalAlignment="Top" Width="120" Height="47" FontFamily="Century Gothic" FontSize="20" Background="#FF3097AE" BorderBrush="Black" BorderThickness="3" Click="totb_Click"/>
+                    <Label x:Name="i4" Content="Total" HorizontalAlignment="Left" Margin="537,203,0,0" VerticalAlignment="Top" Width="159" Height="41" FontFamily="Century Gothic" FontSize="20"/>
+                    <TextBox x:Name="i44" HorizontalAlignment="Left" Height="35" Margin="714,209,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="181" FontFamily="Century Gothic" FontSize="20" Background="#FF316983"/>
+                    <Button x:Name="newb" Content="New Item" HorizontalAlignment="Left" Margin="502,483,0,0" VerticalAlignment="Top" Width="132" Height="47" FontFamily="Century Gothic" FontSize="20" Background="#FF306FAE" BorderBrush="Black" BorderThickness="3" Click="newb_Click"/>
+                    <DatePicker x:Name="c55" HorizontalAlignment="Left" Margin="244,269,0,0" VerticalAlignment="Top" Height="35" Width="181" FontFamily="Century Gothic" FontSize="22"/>
+                    <Button x:Name="doneb" Content="Done" HorizontalAlignment="Left" Margin="658,483,0,0" VerticalAlignment="Top" Width="132" Height="47" FontFamily="Century Gothic" FontSize="20" Background="#FF306FAE" BorderBrush="Black" BorderThickness="3" Click="doneb_Click"/>
+                    <Button x:Name="attb" Content="Attach" HorizontalAlignment="Left" Margin="913,205,0,0" VerticalAlignment="Top" Width="120" Height="47" FontFamily="Century Gothic" FontSize="20" Background="#FF3097AE" BorderBrush="Black" BorderThickness="3" Click="Button_Click"/>
+                    <Label x:Name="time" Content="" HorizontalAlignment="Left" Margin="67,431,0,0" VerticalAlignment="Top" Width="314" Height="99" FontFamily="Century Gothic" FontSize="48" Foreground="Black" FontWeight="Bold"/>
+                    <Label Content="_________________________________________________________________________________________________________________________" HorizontalAlignment="Left" Margin="67,491,0,0" VerticalAlignment="Top" Width="303" FontWeight="Bold"/>
+                    <RichTextBox x:Name="rtb1" HorizontalAlignment="Left" Height="206" Margin="520,257,0,0" VerticalAlignment="Top" Width="372" Background="#FF316983" BorderBrush="Black" BorderThickness="2">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text="RichTextBox"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                    <Button x:Name="coustnew" Content="New Costumer" HorizontalAlignment="Left" Margin="810,483,0,0" VerticalAlignment="Top" Width="174" Height="47" FontFamily="Century Gothic" FontSize="20" Background="#FF306FAE" BorderBrush="Black" BorderThickness="3" Click="coustnew_Click"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Confirm Slip" FontFamily="Century Gothic" FontSize="18" Margin="46,-2,-132,0" HorizontalAlignment="Left" Width="200">
+                <Grid Background="#FF316983" Margin="-15,-11,-10,-14">
+                    <RichTextBox x:Name="rtb" HorizontalAlignment="Left" Height="382" VerticalAlignment="Top" Width="968" Background="#FF316983" Foreground="White" FontSize="16" Margin="53,23,0,0" BorderBrush="#FF316983">
+                        <FlowDocument>
+                            <Paragraph>
+                                <Run Text="RichTextBox"/>
+                            </Paragraph>
+                        </FlowDocument>
+                    </RichTextBox>
+                    <Button x:Name="saveb123" Content="Save" HorizontalAlignment="Left" Margin="362,475,0,0" VerticalAlignment="Top" Width="132" Height="47" FontFamily="Century Gothic" FontSize="20" Background="#FF306FAE" BorderBrush="Black" BorderThickness="3" Click="saveb123_Click"/>
+                    <Button x:Name="printb1" Content="Print" HorizontalAlignment="Left" Margin="518,475,0,0" VerticalAlignment="Top" Width="132" Height="47" FontFamily="Century Gothic" FontSize="20" Background="#FF306FAE" BorderBrush="Black" BorderThickness="3" Click="printb1_Click"/>
+                    <Button x:Name="search" Content="Search" HorizontalAlignment="Left" Margin="671,475,0,0" VerticalAlignment="Top" Width="132" Height="47" FontFamily="Century Gothic" FontSize="20" Background="#FF306FAE" BorderBrush="Black" BorderThickness="3" Click="search_Click"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <TextBox x:Name="pathtb" HorizontalAlignment="Left" Height="40" Margin="515,8,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" FontFamily="Century Gothic" FontSize="16"/>
+        <Label Content="Saving Path " HorizontalAlignment="Left" Margin="357,10,0,0" VerticalAlignment="Top" Width="138" FontFamily="Century Gothic" FontSize="16"/>
+        <Label Content="D:\folder-name\" HorizontalAlignment="Left" Margin="929,10,0,0" VerticalAlignment="Top" Width="153" Height="38" FontFamily="Century Gothic" FontSize="16"/>
+    </Grid>
+</Window>
